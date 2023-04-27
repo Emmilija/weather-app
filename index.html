@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+        <header class="navbar">
+            <div class="flex-div">
+            <div class="left-header">
+            <button id="search" class="search-button search-nav">Search for place</button>
+            <button class="nav-button search-nav"><i class="fa-solid fa-location-crosshairs location"></i></button>
+        </div>
+        <div class="right-header">
+            <button id="cels" class="cel cf">C</button>
+            <button id="fels" class="fel cf">F</button>
+            </div>
+        </div>
+        </header>
+ 
+
+        <main class="">
+        <div class="left-side ">
+            <div class="background-clouds">
+    <img class="clouds" src="/img/Cloud-background.png" alt="">
+    
+</div>
+            <div id="image">
+               
+            </div>
+
+            <h2 class="temperature"></h2>
+            <h1 class="weather"></h1>
+          
+            <div class="getDate">
+                <span id="today">Today </span>
+                <li id="date">date</li>
+          
+            </div>
+            <a class="name" href="">Name</a>
+
+    </div>
+    
+        <div class="right-side ">
+            <div class="days">
+        
+                <div class="card1 card">
+                    <span>Today</span>
+                    <img class="daily-img" src="/img/HeavyRain.png" alt="">
+                    <p> 16C 11C</p>
+                </div>
+                <div class="card2 card">
+                    <span>Sunday</span>
+                    <img class="daily-img" src="/img/LightCloud.png" alt="">
+                    <p> 16C 11C</p>
+                </div>
+                <div class="card3 card">
+                    <span>Monday</span>
+                    <img class="daily-img" src="/img/Shower.png" alt="">
+                    <p> 16C 11C</p>
+                </div>
+                <div class="card4 card">
+                    <span>Tuesday</span>
+                    <img class="daily-img" src="/img/Sleet.png" alt="">
+                    <p> 16C 11C</p>
+                </div>
+                <div class="card5 card">
+                    <span>Wednesday</span>
+                    <img class="daily-img" src="/img/Thunderstorm.png" alt="">
+                    <p> 16C 11C</p>
+                </div>
+                <div class="card6 card">
+                    <span>Thursday</span>
+                    <img class="daily-img" src="/img/Hail.png" alt="">
+                    <p> 16C 11C</p>
+                </div>
+            </div>
+
+
+        <h1 class="text">Today's highlights</h1>
+    
+            <div class="type">
+                <div class="hum box">
+                    <span class="highlights">Humidity</span>
+                    <p id="humidity" class="numb"></p>
+                </div>
+                <div class="wind box">
+                    <span class="highlights">Wind Status</span>
+                    <p id="wind" class="numb"></p>
+                </div>
+                <div class="air box">
+                    <span class="highlights">Air Preasure</span>
+                    <p id="air" class="numb"></p>
+                </div>
+                <div class="vis box">
+                    <span class="highlights">Visibility</span>
+                    <p id="visibility" class="numb"> </p>
+                </div>
+            </div>
+        
+        </div>
+        <footer>
+       
+            <p class="footer">Created by <a class="footer" rel="stylesheet" href="https://github.com/Emmilija">Emmilija</a></p>
+       
+    </footer>
+    </main>
+      
+
+    <script src="/main.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
